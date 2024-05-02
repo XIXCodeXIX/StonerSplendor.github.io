@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crystal and Mineral Shop</title>
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: #eaeaea; /* Light gray background */
+      }
+
+      header {
+          background-color: #333; /* Dark gray header background */
+          color: #fff; /* White text color */
+          padding: 20px;
+          text-align: center;
+          margin-bottom: 20px; /* Add space between header and products */
+      }
+
+      .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px; /* Add padding to the sides */
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center; /* Center products horizontally */
+          gap: 20px; /* Gap between product cards */
+      }
+
+      .product-card {
+          width: 300px;
+          height: 300px;
+          background-color: #fff; /* White background */
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          cursor: pointer;
+          transition: transform 0.3s ease-in-out;
+          position: relative; /* Add position relative for overlay positioning */
+      }
+
+      .product-card:hover {
+          transform: translateY(-10px); /* Lift card on hover */
+      }
+
+      .product-card img {
+          width: 100%;
+          height: 200px; /* Adjust image height */
+          object-fit: cover;
+      }
+
+      .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 20px;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: #fff; /* White text color */
+          transition: background-color 0.3s ease-in-out;
+          opacity: 0; /* Hide overlay by default */
+      }
+
+      .product-card:hover .overlay {
+          opacity: 1; /* Show overlay on hover */
+      }
+
+      .overlay h3 {
+          margin: 0;
+          font-size: 20px;
+      }
+
+      .overlay p {
+          margin: 5px 0 0 0;
+          font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Crystal and Mineral Shop</h1>
+      <h3>Explore our exquisite collection</h3>
+    </header>
+    <div class="container">
+      <div class="product-card" onclick="location.href='product1.html';">
+        <img src="c00.png" alt="Product 1" />
+        <div class="overlay">
+          <h3>Yellow Quartz</h3>
+          <p>$9.99</p>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='product2.html';">
+        <img src="c1.png" alt="Product 2" />
+        <div class="overlay">
+          <h3>Malachite</h3>
+          <p>$9.99</p>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='product3.html';">
+        <img src="c2.png" alt="Product 3" />
+        <div class="overlay">
+          <h3>Snail Fossil</h3>
+          <p>$4.99</p>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='product4.html';">
+        <img src="c3.png" alt="Product 4" />
+        <div class="overlay">
+          <h3>Pair of Sea</h3>
+          <p>$4.99</p>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='product5.html';">
+        <img src="c4.png" alt="Product 5" />
+        <div class="overlay">
+          <h3>Orange Geode</h3>
+          <p>$4.99</p>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='product6.html';">
+        <img src="c5.png" alt="Product 6" />
+        <div class="overlay">
+          <h3>Ceanothus Burl</h3>
+          <p>$4.99</p>
+        </div>
+      </div>
+      <div class="product-card" onclick="location.href='product7.html';">
+        <img src="c6.png" alt="Product 7" />
+        <div class="overlay">
+          <h3>White Pure Quartz</h3>
+          <p>$9.99</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
