@@ -1,110 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product 1</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
 
-        .container {
-            max-width: 800px;
-            padding: 40px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+      .container {
+          max-width: 800px;
+          padding: 40px;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
 
-        .product-info {
-            flex: 1;
-            text-align: center;
-        }
+      .product-info {
+          flex: 1;
+          text-align: center;
+      }
 
-        .product-info h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #333;
-        }
+      .product-info h1 {
+          margin: 0;
+          font-size: 36px;
+          color: #333;
+      }
 
-        .product-info p {
-            font-size: 18px;
-            color: #666;
-            line-height: 1.6;
-        }
+      .product-info p {
+          font-size: 18px;
+          color: #666;
+          line-height: 1.6;
+      }
 
-        .product-images {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left:152px
-        }
+      .product-images {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left:152px
+      }
 
-        .product-images img {
-            max-width: 100%;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-        }
+      .product-images img {
+          max-width: 100%;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      }
 
-        .home-button,
-        .contact-button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-            display: inline-block;
-        }
+      .home-button,
+      .contact-button {
+          background-color: #333;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 20px;
+          transition: background-color 0.3s;
+          display: inline-block;
+      }
 
-        .home-button:hover,
-        .contact-button:hover {
-            background-color: #444;
-        }
+      .home-button:hover,
+      .contact-button:hover {
+          background-color: #444;
+      }
 
-        .button-container {
-            text-align: center;
-        }
+      .button-container {
+          text-align: center;
+      }
     </style>
-</head>
-<body>
-<div class="container">
-    <div class="product-info">
+  </head>
+  <body>
+    <div class="container">
+      <div class="product-info">
         <h1>Yellow Quartz</h1>
-        <p>Yellow quartz, also known as citrine, shines with a sunny glow, symbolizing abundance and joy. Its warm energy clears the mind and attracts success.</p>
+        <p>
+          Yellow quartz, also known as citrine, shines with a sunny glow,
+          symbolizing abundance and joy. Its warm energy clears the mind and
+          attracts success.
+        </p>
         <p>Price: $9.99</p>
         <div class="button-container">
-            <button class="home-button" onclick="location.href='index.html';">Home</button>
-            <button class="contact-button" onclick="showPhoneNumber()">Contact</button>
+          <button class="home-button" onclick="location.href='index.html';">
+            Home
+          </button>
+          <button class="contact-button" onclick="showPhoneNumber()">
+            Contact
+          </button>
         </div>
         <p id="phone-number" style="display:none;">Contact: +961 71831770</p>
+      </div>
+      <div class="product-images">
+        <img src="c00.png" alt="Product 1 Image 1" />
+        <img src="c000.png" alt="Product 1 Image 2" />
+      </div>
     </div>
-    <div class="product-images">
-        <img src="c00.png" alt="Product 1 Image 1">
-        <img src="c0.png" alt="Product 1 Image 2">
-    </div>
-</div>
 
-<script>
-    function showPhoneNumber() {
-        var phoneNumber = document.getElementById("phone-number");
-        phoneNumber.style.display = "block";
-    }
-</script>
-</body>
+    <script>
+      function showPhoneNumber() {
+          var phoneNumber = document.getElementById("phone-number");
+          phoneNumber.style.display = "block";
+      }
+    </script>
+  </body>
 </html>
-
